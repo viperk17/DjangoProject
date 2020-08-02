@@ -11,4 +11,3 @@ class Contact(models.Model):
     # The function to make the contact person name visible in admin panel
     def __str__(self):
         return self.name
-    
