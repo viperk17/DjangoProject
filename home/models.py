@@ -7,3 +7,8 @@ class Contact(models.Model):
     phone = models.CharField(max_length=12)
     desc = models.TextField()
     date = models.DateField()
+
+    # The function to make the contact person name visible in admin panel
+    def __str__(self):
+        return self.name
+    
